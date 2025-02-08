@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no">
+    <meta name="x-apple-disable-message-reformatting">
+    <meta name="color-scheme" content="light dark">
+    <meta name="supported-color-schemes" content="light dark">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <title>HTML Email Template Boilerplate</title>
+    <!--[if mso]>
+      <noscript>
+         <xml>
+            <o:OfficeDocumentSettings>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+            </o:OfficeDocumentSettings>
+         </xml>
+      </noscript>
+   <![endif]-->
+    <style type="text/css">
+        body {
+            background-color: white;
+            color: #55342d;
+            font-family: "Crimson Text", serif;
+        }
+
+        table {
+            border-spacing: 0;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 0;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        img {
+            border: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #3d3d3d;
+            font-size: 16px;
+        }
+
+        .content {
+            line-height: 20px;
+            font-size: 16px;
+        }
+
+        u+.body .gmail-blend-screen {
+            background: #000;
+            mix-blend-mode: screen;
+        }
+
+        u+.body .gmail-blend-difference {
+            background: #000;
+            mix-blend-mode: difference;
+        }
+
+        .ExternalClass {
+            width: 100%;
+        }
+
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+            line-height: 100%;
+        }
+
+        a[x-apple-data-detectors=true] {
+            color: inherit !important;
+            text-decoration: inherit !important;
+        }
+
+        @media screen and (max-width: 599.98px) {
+
+            .product,
+            .top-footer td {
+                display: block;
+                width: 100% !important;
+                text-align: center;
+            }
+
+            .product {
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+
+            .product-title {
+                text-align: left;
+            }
+
+            .product-img-block img {
+                max-width: 190px;
+                left: 10px !important;
+            }
+
+            .product-desc-row td {
+                padding: 20px;
+                text-align: justify;
+            }
+
+            .column-content {
+                padding: 0 !important;
+            }
+
+            .order-now-container {
+                padding: 0 !important;
+                padding-bottom: 20px !important;
+            }
+
+            .top-footer td,
+            .order-now {
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+
+            #footer-price-container {
+                padding-top: 0 !important;
+            }
+
+            #footer-price-container td {
+                border-left: none !important;
+                border-right: none !important;
+            }
+
+            #footer-price-container td {
+                border-top: solid #8f6f59 2px;
+                border-bottom: solid #8f6f59 2px;
+                padding: 10px 0;
+                width: 75% !important;
+                justify-self: center;
+            }
+
+            .standard {
+                display: none !important;
+            }
+
+            .responsive {
+                visibility: visible !important;
+                text-align: left;
+            }
+        }
+
+        @media screen and (max-width: 499.98px) {}
+
+        @media screen and (max-width: 399.98px) {}
+
+        :root {
+            color-scheme: light dark;
+            supported-color-schemes: light dark;
+        }
+
+        @media (prefers-color-scheme: dark) {
+
+            body,
+            table {
+                background: #2d2d2d !important;
+                color: #ffffff !important;
+            }
+
+            .darkmode-transparent {
+                background-color: transparent !important;
+            }
+
+            [data-ogsc] body,
+            table {
+                background: #2d2d2d !important;
+                color: #ffffff !important;
+            }
+
+            [data-ogsc] .darkmode-transparent {
+                background-color: transparent !important;
+            }
+        }
+
+        #email-container {
+            border: solid #55342d 5px !important;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            padding: 0;
+            margin: 0
+        }
+
+        h1,
+        .h1 {
+            font-size: 50px;
+            font-weight: 600;
+        }
+
+        h2,
+        .h2 {
+            font-size: 40px;
+            font-weight: 600;
+        }
+
+        h3,
+        .h3 {
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        h4,
+        .h4 {
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        h5,
+        .h5 {
+            font-size: 15px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        h6,
+        .h6 {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        /* table,
+        tr,
+        td {
+            border: solid black 2px;
+        } */
+
+        .product-padding td {
+            background-color: #fae9cb;
+        }
+
+        /* .product-img-block td {
+            min-height: 215px;
+        } */
+
+        .product-desc-row td {
+            height: 100px;
+            align-items: start;
+            vertical-align: top;
+            padding-bottom: 10px;
+        }
+
+        .product-title-row td {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .product-price-row td {
+            background-color: #8f6f59;
+            color: #ffffff;
+        }
+
+        .mini-font {
+            font-size: 11px;
+        }
+
+        #order-now-email {
+            background-color: #8f6f59;
+            color: white;
+        }
+
+        #order-now-phone {
+            background-color: white;
+        }
+
+        .top-footer {
+            background-color: #e8e1d4;
+        }
+
+        #footer-price-container td {
+            border-right: solid #8f6f59 2px;
+            border-left: solid #8f6f59 2px;
+        }
+
+        tr#copy-section,
+        .links-footer {
+            background-color: #55342d;
+            color: #ffffff;
+        }
+
+        .column-content {
+            padding: 0px 25px 25px 25px;
+        }
+
+        .responsive {
+            visibility: hidden;
+        }
+
+        .standard {
+            width: 100%;
+        }
+
+        /* .product-title-row td {
+            padding: 10px 0;
+        } */
+    </style>
+
+    <!--[if mso]>
+      <style type="text/css">
+         body {
+            background-color: #dde0e1 !important;
+         }
+         body, table, td, p, a {
+            font-family: Arial, Helvetica, sans-serif !important;
+         }
+         table {
+            border-spacing: 0 !important;
+            border-collapse: collapse !important;
+         }
+      </style>
+   <![endif]-->
+
+</head>
+
+<body class="body" xml:lang="en" style="margin: 0;padding: 0;min-width: 100%;">
+
+    <div style="width: 100%; table-layout: fixed; font-size: 16px; margin: 0 auto 40px;">
+        <div style="max-width: 600px; font-size: 16px; box-shadow: 0 0 10px rgba(0,0,0, .2);margin: 0 auto;">
+
+            <div
+                style="font-size: 0px; mso-line-height-rule: exactly; line-height: 0px; display: none; max-width: 0px; max-height: 0px; opacity: 0; overflow: hidden; mso-hide: all;">
+                This is our preheader text which can be 35-190 characters but 85-100 is recommended.
+                <!-- Add Preheader Text Here (85-100 characters in length) -->
+                &zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;
+            </div>
+            <!-- End Preheader (remove comment) -->
+
+            <!--[if mso]>
+            <table width="600" align="center" style="border-spacing: 0; border-collapse: collapse; color: #3d3d3d;" role="presentation">
+            <tr>
+            <td style="padding: 0;">
+         <![endif]-->
+
+            <table align="center"
+                style="border-spacing: 0; border-collapse: collapse; font-size: 16px; margin: 0 auto; padding: 0; width: 100%; max-width: 600px; background-color: #fffcf7;"
+                role="presentation">
+                <tr id="email-container">
+                    <td style="padding: 5%;">
+                        <table width="100%" style="border-spacing: 0;" role="presentation">
+                            <tr id="logo-section">
+                                <td style="padding: 0">
+                                    <table width="100%" style="border-spacing: 0;" role="presentation">
+                                        <tr>
+                                            <td width="40px">
+                                                <h1>R</h1>
+                                            </td>
+                                            <td>
+                                                <table width="100%" style="border-spacing: 0; font-weight: 700;"
+                                                    role="presentation">
+                                                    <tr>
+                                                        <td>Rick's</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Chocolate House</td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr id="title-section">
+                                <td style="padding: 0">
+                                    <table width="100%" style="border-spacing: 0;" role="presentation">
+                                        <tr>
+                                            <td style="padding: 20px 50px 30px 0">
+                                                <h1>Explore <br /> the Tasty World <br /> of Chocolate Treats</h1>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr id="product-columns-section">
+                                <td style="padding: 0">
+
+                                    <table width="100%" style="border-spacing: 0;" role="presentation">
+                                        <tr class="product-section">
+                                            <td class="product" style="padding: 0 2.5% 5% 0;">
+                                                <table width="100%"
+                                                    style="vertical-align: top;border-spacing: 0; width: 100%; display: inline-block;"
+                                                    role="presentation" class="product-padding">
+
+                                                    <tr class="product-img-block">
+                                                        <td style="position: relative;">
+                                                            <img style="position: absolute; left: 30px;" width="75%"
+                                                                src="Brownie - Circle-min.png" alt="Brownie"
+                                                                title="Brownie" />
+                                                            <table width="100%" style="border-spacing: 0;"
+                                                                role="presentation" height="190px">
+                                                                <tr>
+                                                                    <td
+                                                                        style="background-color: #FFFCF7 !important; width: 100%; height: 50%;">
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="column-content">
+                                                            <table width="100%" style="border-spacing: 0;"
+                                                                role="presentation" class="product-container">
+                                                                <tr class="product-title-row">
+                                                                    <td>
+                                                                        <table width="100%"
+                                                                            style="border-spacing: 0; justify-self: center; width: 100%;">
+                                                                            <tr>
+                                                                                <td><span
+                                                                                        class="h3">01&zwnj;&nbsp;&#847;</span>
+                                                                                </td>
+                                                                                <td class="product-title"><span
+                                                                                        class="h6"
+                                                                                        style="text-transform: uppercase;">Fudge
+                                                                                        Brownies</span></td>
+                                                                            </tr>
+                                                                        </table>
+
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="product-desc-row">
+                                                                    <td style="min-width: 190px" class="mini-font">
+                                                                        Indulge in
+                                                                        rich Fudge Brownies, known for their chewy and
+                                                                        delightful texture. Every
+                                                                        piece is made with care and attention, ensuring
+                                                                        its uttermost quality. Your taste buds will
+                                                                        thank you without a doubt.</td>
+                                                                </tr>
+                                                                <tr class="product-price-row">
+                                                                    <td>
+                                                                        <table width="100%" role="presentation"
+                                                                            style="border-spacing: 0; justify-self: center; width: 100%; height: 57px;">
+                                                                            <tr>
+                                                                                <td style="padding-left: 10px;">
+                                                                                    <h3 style="text-align: center;">$10
+                                                                                    </h3>
+                                                                                </td>
+                                                                                <td class="standard mini-font">
+                                                                                    &zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;for
+                                                                                    a box of 10 brownies
+                                                                                </td>
+                                                                                <td class="responsive mini-font">
+                                                                                    &zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;for
+                                                                                    a box of 10 brownies</td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td class="product" style="padding: 0 0 5% 2.5%;">
+                                                <table width="100%"
+                                                    style="vertical-align: top;border-spacing: 0;width: 100%; display: inline-block;"
+                                                    class="product-padding" role="presentation">
+                                                    <tr class="product-img-block">
+                                                        <td style="position: relative;">
+                                                            <img style="position: absolute; left: 30px;" width="75%"
+                                                                src="Cake - Circle-min.png" alt="Cake" title="Cake" />
+                                                            <table width="100%" style="border-spacing: 0;"
+                                                                role="presentation" height="190px">
+                                                                <tr>
+                                                                    <td
+                                                                        style="background-color: #FFFCF7 !important; width: 100%; height: 50%;">
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="column-content">
+                                                            <table width="100%" style="border-spacing: 0;"
+                                                                role="presentation" class="product-container">
+                                                                <tr class="product-title-row">
+                                                                    <td>
+                                                                        <table width="100%"
+                                                                            style="border-spacing: 0; justify-self: center; width: 100%;">
+                                                                            <tr>
+                                                                                <td><span
+                                                                                        class="h3">02&zwnj;&nbsp;&#847;</span>
+                                                                                </td>
+                                                                                <td class="product-title"><span
+                                                                                        class="h6"
+                                                                                        style="text-transform: uppercase">
+                                                                                        Chocolate Bun Cake</span></td>
+                                                                            </tr>
+                                                                        </table>
+
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="product-desc-row">
+                                                                    <td style="min-width: 190px" class="mini-font">
+                                                                        Satisfy your cravings with
+                                                                        a delicious Chocolate Bun Cake. Every
+                                                                        cake is made with care and attention, ensuring
+                                                                        its uttermost quality. Your taste buds will
+                                                                        thank you without a doubt.</td>
+                                                                </tr>
+                                                                <tr class="product-price-row">
+
+                                                                    <td>
+                                                                        <table width="100%"
+                                                                            style="border-spacing: 0; justify-self: center; width: 100%; height: 57px;"
+                                                                            role="presentation" role="presentation">
+                                                                            <tr>
+                                                                                <td style="padding-left: 10px;">
+                                                                                    <h3 style="text-align: center;">$25
+                                                                                    </h3>
+                                                                                </td>
+                                                                                <td class="standard mini-font">
+                                                                                    &zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;for
+                                                                                    1 cake
+                                                                                </td>
+                                                                                <td class="responsive mini-font">
+                                                                                    &zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;for
+                                                                                    1 cake
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr class="product-section">
+                                            <td class="product" style="padding: 0 2.5% 5% 0;">
+                                                <table width="100%"
+                                                    style="vertical-align: top;border-spacing: 0;width: 100%; display: inline-block;"
+                                                    role="presentation" class="product-padding">
+
+                                                    <tr class="product-img-block">
+                                                        <td style="position: relative;">
+                                                            <img style="position: absolute; left: 30px;" width="75%"
+                                                                src="Cookie - Circle-min.png" alt="Cookie"
+                                                                title="Cookie" />
+                                                            <table width="100%" style="border-spacing: 0;"
+                                                                role="presentation" height="190px">
+                                                                <tr>
+                                                                    <td
+                                                                        style="background-color: #FFFCF7 !important; width: 100%; height: 50%;">
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="column-content">
+                                                            <table width="100%"
+                                                                style="border-spacing: 0; justify-self: center; width: 100%;"
+                                                                class="product-container">
+                                                                <tr class="product-title-row">
+                                                                    <td>
+                                                                        <table width="100%"
+                                                                            style="border-spacing: 0; justify-self: center; width: 100%;">
+                                                                            <tr>
+                                                                                <td><span
+                                                                                        class="h3">03&zwnj;&nbsp;&#847;</span>
+                                                                                </td>
+                                                                                <td class="product-title"><span
+                                                                                        class="h6"
+                                                                                        style="text-transform: uppercase">Chocolate
+                                                                                        Cookies</span></td>
+                                                                            </tr>
+                                                                        </table>
+
+                                                                    </td>
+                                                                </tr>
+                                                                <tr class="product-desc-row">
+                                                                    <td style="min-width: 190px" class="mini-font">
+                                                                        Enjoy a pack of Chocolate Chip Cookies. Treat
+                                                                        yourself to a snack that is crunch, chewy, and
+                                                                        immensely flavorful. Every
+                                                                        cookie is made with care and attention, ensuring
+                                                                        its uttermost quality. Your taste buds will
+                                                                        thank you without a doubt.</td>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="product-price-row">
+                                                        <td>
+                                                            <table width="100%"
+                                                                style="border-spacing: 0; justify-self: center; width: 100%; height: 57px;">
+                                                                <tr>
+                                                                    <td style="padding-left: 10px;">
+                                                                        <h3 style="text-align: center;">$10
+                                                                        </h3>
+                                                                    </td>
+                                                                    <td class="standard mini-font">
+                                                                        &zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;for
+                                                                        a box of 10 cookies</td>
+                                                                    <td class="responsive mini-font">
+                                                                        &zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;for
+                                                                        a box of 10 cookies</td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class="product" style="padding: 0 0 5% 2.5%;">
+                                    <table width="100%"
+                                        style="vertical-align: top;border-spacing: 0;width: 100%; display: inline-block;"
+                                        role="presentation" class="product-padding">
+                                        <tr class="product-img-block">
+                                            <td style="position: relative;">
+                                                <img style="position: absolute; left: 30px;" width="75%"
+                                                    src="Donut - Circle-min.png" alt="Donut" title="Donut" />
+                                                <table width="100%" style="border-spacing: 0;" role="presentation"
+                                                    height="190px">
+                                                    <tr>
+                                                        <td
+                                                            style="background-color: #FFFCF7 !important; width: 100%; height: 50%;">
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="column-content">
+                                                <table width="100%"
+                                                    style="border-spacing: 0; justify-self: center; width: 100%;"
+                                                    class="product-container">
+                                                    <tr class="product-title-row">
+                                                        <td>
+                                                            <table width="100%"
+                                                                style="border-spacing: 0; justify-self: center; width: 100%;">
+                                                                <tr>
+                                                                    <td><span class="h3">04&zwnj;&nbsp;&#847;</span>
+                                                                    </td>
+                                                                    <td class="product-title"><span class="h6"
+                                                                            style="text-transform: uppercase">Chocolate
+                                                                            Donuts</span></td>
+                                                                </tr>
+                                                            </table>
+
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="product-desc-row">
+                                                        <td style="min-width: 190px" class="mini-font">Enjoy a pack of
+                                                            Chocolate Donuts in all their chewy goodness. Every
+                                                            donut is carefully crafted to ensure
+                                                            its uttermost quality. Your taste buds will
+                                                            thank you without a doubt.</td>
+                                                    </tr>
+                                                    <tr class="product-price-row">
+                                                        <td>
+                                                            <table width="100%"
+                                                                style="border-spacing: 0; justify-self: center; width: 100%; height: 57px;">
+                                                                <tr>
+                                                                    <td style="padding-left: 10px;">
+                                                                        <h3 style="text-align: center;">$25
+                                                                        </h3>
+                                                                    </td>
+                                                                    <td class="standard mini-font">
+                                                                        &zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;for
+                                                                        a box of 12 donuts</td>
+                                                                    <td class="responsive mini-font">
+                                                                        &zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;for
+                                                                        a box of 12 donuts</td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr id="copy-section">
+                    <td style="padding: 0">
+                        <table width="100%" style="border-spacing: 0;" role="presentation">
+                            <tr>
+                                <td class="h4" style="text-align: center; padding: 25px 0;">
+                                    Now, you can enjoy a collection of the <br>
+                                    most delicious chocolates around the<br>
+                                    world at our little house.<br>
+                                    <hr width="50%" style="border: solid #bb946a 1.5px;">
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr id="footer-section">
+                    <td style="padding: 0">
+                        <table width="100%" style="border-spacing: 0;" role="presentation">
+                            <tr class="top-footer footer-row">
+                                <td style="padding: 20px 20px 20px 20px; width: 33%;">
+                                    <h6>Get special prices on Thanksgiving week.</h6>
+                                </td>
+                                <td id="footer-price-container"
+                                    style="padding: 20px 0; text-align: center; width: 34%;">
+                                    <table width="100%" style="border-spacing: 0;" role="presentation">
+                                        <tr>
+                                            <td>
+                                                <div style="font-size: 13px">Up to</div>
+                                                <div class="h2" style="margin-top: -7px; margin-bottom: -14px; ">20%
+                                                </div>
+                                                <div><strong style="font-size: 13px;">
+                                                        Off</strong></div>
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                </td>
+                                <td class="order-now-container"
+                                    style="padding: 20px 20px 20px 20px; text-align: center; justify-items: center; width: 33%;">
+                                    <table width="100%" style="border-spacing: 0;" role="presentation">
+                                        <tr>
+                                            <td>
+                                                <h5>Order Now</h5>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td id="order-now-email" class="order-now mini-font"
+                                                style="padding: 3px 10px;">
+                                                www.rickschocolate.com</td>
+                                        </tr>
+                                        <tr>
+                                            <td id="order-now-phone" class="order-now mini-font"
+                                                style="padding: 3px 10px;">
+                                                (123) 456-7890</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="links-footer" width="100%" style="border-spacing: 0; text-align: center;"
+                            role="presentation">
+                            <tr class="bottom-footer footer-row">
+                                <td style="padding: 10px 0;" class="mini-font">@rickschocolate
+                                    &zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;
+                                    support@rickschocolate.com
+                                    &zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;
+                                    www.rickschocolate.com</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            </td>
+            </tr>
+            </table>
+
+            <!--[if mso]>
+            </td>
+            </tr>
+            </table>
+         <![endif]-->
+
+        </div>
+    </div>
+
+</body>
+
+</html>
