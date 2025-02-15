@@ -111,6 +111,7 @@
             }
 
             .product-desc-row td {
+                height: auto !important;
                 padding: 20px;
                 text-align: justify;
             }
@@ -154,6 +155,25 @@
             .responsive {
                 visibility: visible !important;
                 text-align: left;
+                display: inline-block !important;
+                text-align: start;
+                justify-content: start;
+            }
+
+            .responsive.price {
+                width: 70px !important;
+                padding-left: 0 !important;
+
+            }
+
+
+            .price-container {
+                height: auto !important;
+                text-align: start;
+            }
+
+            .price-container td {
+                width: auto !important;
             }
         }
 
@@ -305,11 +325,14 @@
 
         .responsive {
             visibility: hidden;
+            width: 0 !important;
+            display: none;
         }
 
+        /*
         .standard {
             width: 100%;
-        }
+        } */
 
         /* .product-title-row td {
             padding: 10px 0;
@@ -447,20 +470,29 @@
                                                                 </tr>
                                                                 <tr class="product-price-row">
                                                                     <td>
-                                                                        <table width="100%" role="presentation"
-                                                                            style="border-spacing: 0; justify-self: center; width: 100%; height: 57px;">
+                                                                        <table class="price-container" width="100%"
+                                                                            role="presentation"
+                                                                            style="border-spacing: 0; justify-self: start; width: max-content; height: 57px;">
                                                                             <tr>
-                                                                                <td style="padding-left: 10px;">
+                                                                                <td class="standard price mini-font"
+                                                                                    style="padding-left: 10px;">
                                                                                     <h3 style="text-align: center;">$10
                                                                                     </h3>
                                                                                 </td>
-                                                                                <td class="standard mini-font">
+                                                                                <td class="standard per mini-font"
+                                                                                    style="padding-left: 10px;">
+                                                                                    &zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;for
+                                                                                    a box of 10 brownies</td>
+                                                                                <td class="responsive price mini-font"
+                                                                                    style="padding-left: 10px;">
+                                                                                    <h3 style="text-align: center;">$10
+                                                                                    </h3>
+                                                                                </td>
+                                                                                <td class="responsive per mini-font"
+                                                                                    style="padding-left: 10px;">
                                                                                     &zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;for
                                                                                     a box of 10 brownies
                                                                                 </td>
-                                                                                <td class="responsive mini-font">
-                                                                                    &zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;for
-                                                                                    a box of 10 brownies</td>
                                                                             </tr>
                                                                         </table>
                                                                     </td>
@@ -523,19 +555,27 @@
                                                                 <tr class="product-price-row">
 
                                                                     <td>
-                                                                        <table width="100%"
-                                                                            style="border-spacing: 0; justify-self: center; width: 100%; height: 57px;"
+                                                                        <table class="price-container" width="100%"
+                                                                            style="border-spacing: 0; justify-self: start; width: max-content; height: 57px;"
                                                                             role="presentation" role="presentation">
                                                                             <tr>
-                                                                                <td style="padding-left: 10px;">
+                                                                                <td class="standard price mini-font"
+                                                                                    style="padding-left: 10px;">
                                                                                     <h3 style="text-align: center;">$25
                                                                                     </h3>
                                                                                 </td>
-                                                                                <td class="standard mini-font">
+                                                                                <td class="standard per mini-font"
+                                                                                    style="padding-left: 10px;">
                                                                                     &zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;for
                                                                                     1 cake
                                                                                 </td>
-                                                                                <td class="responsive mini-font">
+                                                                                <td class="responsive price mini-font"
+                                                                                    style="padding-left: 10px;">
+                                                                                    <h3 style="text-align: center;">$25
+                                                                                    </h3>
+                                                                                </td>
+                                                                                <td class="responsive per mini-font"
+                                                                                    style="padding-left: 10px;">
                                                                                     &zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;for
                                                                                     1 cake
                                                                                 </td>
@@ -607,19 +647,28 @@
                                                     </tr>
                                                     <tr class="product-price-row">
                                                         <td>
-                                                            <table width="100%"
-                                                                style="border-spacing: 0; justify-self: center; width: 100%; height: 57px;">
+                                                            <table class="price-container" width="100%"
+                                                                style="border-spacing: 0; justify-self: start; width: max-content; height: 57px;">
                                                                 <tr>
-                                                                    <td style="padding-left: 10px;">
+                                                                    <td class="standard price mini-font"
+                                                                        style="padding-left: 10px;">
                                                                         <h3 style="text-align: center;">$10
                                                                         </h3>
                                                                     </td>
-                                                                    <td class="standard mini-font">
+                                                                    <td class="standard per mini-font"
+                                                                        style="padding-left: 10px;">
                                                                         &zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;for
                                                                         a box of 10 cookies</td>
-                                                                    <td class="responsive mini-font">
+                                                                    <td class="responsive price mini-font"
+                                                                        style="padding-left: 10px;">
+                                                                        <h3 style="text-align: center;">$10
+                                                                        </h3>
+                                                                    </td>
+                                                                    <td class="responsive per mini-font"
+                                                                        style="padding-left: 10px;">
                                                                         &zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;for
-                                                                        a box of 10 cookies</td>
+                                                                        a box of 10 cookies
+                                                                    </td>
                                                                 </tr>
                                                             </table>
                                                         </td>
@@ -679,19 +728,28 @@
                                                     </tr>
                                                     <tr class="product-price-row">
                                                         <td>
-                                                            <table width="100%"
-                                                                style="border-spacing: 0; justify-self: center; width: 100%; height: 57px;">
+                                                            <table class="price-container" width="100%"
+                                                                style="border-spacing: 0; justify-self: start; width: max-content; height: 57px;">
                                                                 <tr>
-                                                                    <td style="padding-left: 10px;">
+                                                                    <td class="standard price mini-font"
+                                                                        style="padding-left: 10px;">
                                                                         <h3 style="text-align: center;">$25
                                                                         </h3>
                                                                     </td>
-                                                                    <td class="standard mini-font">
+                                                                    <td class="standard per mini-font"
+                                                                        style="padding-left: 10px;">
                                                                         &zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;for
                                                                         a box of 12 donuts</td>
-                                                                    <td class="responsive mini-font">
+                                                                    <td class="responsive price mini-font"
+                                                                        style="padding-left: 10px;">
+                                                                        <h3 style="text-align: center;">$10
+                                                                        </h3>
+                                                                    </td>
+                                                                    <td class="responsive per mini-font"
+                                                                        style="padding-left: 10px;">
                                                                         &zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;for
-                                                                        a box of 12 donuts</td>
+                                                                        a box of 12 donuts
+                                                                    </td>
                                                                 </tr>
                                                             </table>
                                                         </td>
