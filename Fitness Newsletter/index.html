@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+   <meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no">
+   <meta name="x-apple-disable-message-reformatting">
+   <meta name="color-scheme" content="light dark">
+   <meta name="supported-color-schemes" content="light dark">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap" rel="stylesheet">
+   <title>HTML Email Template Boilerplate</title>
+   <!--[if mso]>
+      <noscript>
+         <xml>
+            <o:OfficeDocumentSettings>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+            </o:OfficeDocumentSettings>
+         </xml>
+      </noscript>
+   <![endif]-->
+   <style type="text/css">
+      table {
+         border-spacing: 0;
+         border-collapse: collapse;
+         font-family: "Antonio", "san-serif";
+      }
+
+      td {
+         padding: 0;
+      }
+
+      p {
+         font-size: 16px;
+      }
+
+      img {
+         border: 0;
+      }
+
+      a {
+         text-decoration: none;
+         color: #3d3d3d;
+         font-size: 16px;
+      }
+
+      .content {
+         line-height: 20px;
+         font-size: 16px;
+      }
+
+      u+.body .gmail-blend-screen {
+         background: #000;
+         mix-blend-mode: screen;
+      }
+
+      u+.body .gmail-blend-difference {
+         background: #000;
+         mix-blend-mode: difference;
+      }
+
+      .ExternalClass {
+         width: 100%;
+      }
+
+      .ExternalClass,
+      .ExternalClass p,
+      .ExternalClass span,
+      .ExternalClass font,
+      .ExternalClass td,
+      .ExternalClass div {
+         line-height: 100%;
+      }
+
+      a[x-apple-data-detectors=true] {
+         color: inherit !important;
+         text-decoration: inherit !important;
+      }
+
+      a {
+         color: white;
+      }
+
+      .title,
+      .sub-title {
+         text-transform: uppercase;
+         font-weight: 600;
+      }
+
+      .title {
+         color: #ffde59;
+         font-size: 70px;
+         font-weight: 700;
+      }
+
+      .sub-title {
+         font-size: 40px;
+         font-weight: 700;
+         padding-bottom: 15px;
+      }
+
+      .copy {
+         font-size: 14px;
+         font-weight: 100;
+         font-family: sans-serif;
+         font-weight: 100;
+         color: rgba(255, 255, 255, .7);
+      }
+
+      .button {
+         background-color: #ffde59;
+         color: black;
+         padding: 10px 20px;
+         font-weight: 700;
+      }
+
+      #service-section {
+         text-align: center;
+         width: 100%;
+      }
+
+      .service-sub-title {
+         padding: 20px 0;
+         font-size: 20px;
+         font-weight: 700;
+      }
+
+      #logo p {
+         margin: 0;
+      }
+
+      .sub-title {
+         padding: 30px 0;
+      }
+
+      #service-title,
+      .about-title {
+         font-size: 35px;
+         padding: 0px 0 15px 0;
+         position: relative;
+         font-weight: 700;
+      }
+
+      #promo-title {
+         font-size: 40px;
+         font-weight: 700;
+         text-align: center;
+         margin: 0;
+         padding-bottom: 20px;
+      }
+
+      #service-title::after {
+         content: '';
+         height: 3px;
+         width: 10%;
+         position: absolute;
+         background-color: #ffde59;
+         left: calc(45%);
+         bottom: 0;
+      }
+
+      .about-title::after {
+         content: '';
+         height: 3px;
+         width: 25%;
+         position: absolute;
+         background-color: #ffde59;
+         left: calc(0%);
+         bottom: 0;
+      }
+
+      #promo-section {
+         padding: 30px 0;
+      }
+
+      #title-1 {
+         padding: 0;
+      }
+
+      #about-section {
+         background-color: #6d6d6d;
+      }
+
+      #header-section {
+         margin-bottom: -40px;
+      }
+
+      #link-footer .copy {
+         font-size: 12px;
+      }
+
+      table,
+      tr,
+      td {
+         /* border: solid white 2px; */
+      }
+
+      @media screen and (max-width: 599.98px) {
+
+         .title{
+            font-size: 60px;
+         }
+
+         .copy{
+            font-size: 12px;
+         }
+
+         #header-copy {
+            padding-right: 10px !important;
+         }
+
+         #services-data{
+            padding-bottom: 0 !important;
+         }
+
+         #services-list table{
+            padding-bottom: 40px;
+         }
+
+         #services-list td, #link-footer td{
+            display: block;
+            width: 100% !important;
+            text-align: center;
+         }
+
+          #link-footer td{
+            padding-bottom: 15px;
+          }
+
+      }
+
+      @media screen and (max-width: 499.98px) {}
+
+      @media screen and (max-width: 399.98px) {}
+
+      :root {
+         color-scheme: light dark;
+         supported-color-schemes: light dark;
+      }
+
+      @media (prefers-color-scheme: dark) {
+
+         body,
+         table {
+            background: #2d2d2d !important;
+            color: #ffffff !important;
+         }
+
+         .darkmode-transparent {
+            background-color: transparent !important;
+         }
+
+         [data-ogsc] body,
+         table {
+            background: #2d2d2d !important;
+            color: #ffffff !important;
+         }
+
+         [data-ogsc] .darkmode-transparent {
+            background-color: transparent !important;
+         }
+      }
+   </style>
+
+   <!--[if mso]>
+      <style type="text/css">
+         body {
+            background-color: #dde0e1 !important;
+         }
+         body, table, td, p, a {
+            font-family: Arial, Helvetica, sans-serif !important;
+         }
+         table {
+            border-spacing: 0 !important;
+            border-collapse: collapse !important;
+         }
+      </style>
+   <![endif]-->
+
+</head>
+
+<body class="body" xml:lang="en" style="margin: 0;padding: 0;min-width: 100%; background-color: #dde0e1;">
+
+   <div
+      style="width: 100%; table-layout: fixed; background-color: #dde0e1; color: #3d3d3d; font-family: Arial, Helvetica, sans-serif; font-size: 16px; margin: 0 auto 40px;">
+      <div
+         style="max-width: 600px; background-color: #fafdfe; color: #3d3d3d; font-family: Arial, Helvetica, sans-serif; font-size: 16px; box-shadow: 0 0 10px rgba(0,0,0, .2);margin: 0 auto;">
+
+         <div
+            style="font-size: 0px; color: #fafdfe; mso-line-height-rule: exactly; line-height: 0px; display: none; max-width: 0px; max-height: 0px; opacity: 0; overflow: hidden; mso-hide: all;">
+            This is our preheader text which can be 35-190 characters but 85-100 is recommended.
+            <!-- Add Preheader Text Here (85-100 characters in length) -->
+            &zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;
+         </div>
+         <!-- End Preheader (remove comment) -->
+
+         <!--[if mso]>
+            <table width="600" align="center" style="border-spacing: 0; border-collapse: collapse; color: #3d3d3d;" role="presentation">
+            <tr>
+            <td style="padding: 0;">
+         <![endif]-->
+
+         <table align="center"
+            style="border-spacing: 0; border-collapse: collapse; color: white; font-family: Arial, Helvetica, sans-serif; font-size: 16px; margin: 0 auto; padding:30px; width: 100%; max-width: 600px; background-image: url('dark-concrete.jpg');"
+            role="presentation">
+            <tr>
+               <td>
+                  <table id="header-section" width="100%"
+                     style="border-spacing: 0; background-image: url(workout\ 6.png); background-size: 600px; background-repeat: no-repeat;"
+                     role="presentation">
+                     <tr>
+                        <td id="header-copy" width="50%" style="padding: 40px 40px 40px 60px; border-spacing: 0;"
+                           role="presentation">
+                           <table width="100%" style="border-spacing: 0;" role="presentation">
+                              <tr>
+                                 <td id="logo">
+                                    <table width="100%" style="border-spacing: 0;" role="presentation">
+                                       <tr>
+                                          <td style="line-height: 1; font-size: 20px;">
+                                             <p><img src="weights-gym-svgrepo-com.svg" alt="" title="" width="49px" />
+                                             </p>FAUGET
+                                          </td>
+                                       </tr>
+                                    </table>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td id="title-1" class="sub-title" style="font-weight: 700; padding-top: 20px">MAKE
+                                    <i>YOUR</i>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td id="title-2" class="title" style="font-weight: 700; line-height: 1;"><i>Move</i>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="padding: 30px 0;" class="copy">Lorem ipsum odor amet, consectetuer
+                                    adipiscing elit. Lobortis
+                                    dis
+                                    cubilia eleifend metus egestas
+                                    eget nam ornare porta.</td>
+                              </tr>
+                              <tr>
+                                 <td style="padding: 0 0px 30px 0"><a class="button" href="www.example.com">JOIN
+                                       US&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;<img
+                                          style="vertical-align: middle; margin-top: -5px;" src="mouse-svgrepo-com.svg"
+                                          alt="" title="" /></a>
+                                 </td>
+                              </tr>
+                           </table>
+                        </td>
+                        <td id="header-image" style="padding: 0 40px; border-spacing: 0;" role="presentation"></td>
+                     </tr>
+                  </table>
+                  <table width="100%" style="border-spacing: 0; margin-bottom: -5px;" role="presentation">
+                     <tr>
+                        <td><img src="top-horizontal-tear.png" alt="" title="" width="100%" /></td>
+                     </tr>
+                  </table>
+                  <table id="about-section" width="100%" style="border-spacing: 0;" role="presentation">
+                     <tr>
+                        <td class="about-row" style="padding: 20px 60px 10px 60px; margin: 0;">
+                           <table width="100%" style="border-spacing: 0;" role="presentation">
+                              <tr>
+                                 <td class="row-image" style="padding-right: 25px; width: 50%;"><img src="workout 4.png"
+                                       alt="" title="" width="100%" /></td>
+                                 <td class="row-copy" style="padding-left: 25px; width: 50%;">
+                                    <table width="100%" style="border-spacing: 0;" role="presentation">
+                                       <tr>
+                                          <td class="about-title" class="sub-title">ABOUT US</td>
+                                       </tr>
+                                       <tr>
+                                          <td style="padding-top: 30px;" class="copy">Lorem ipsum odor amet,
+                                             consectetuer adipiscing elit. Lobortis
+                                             dis cubilia eleifend metus egestas
+                                             eget nam ornare porta.</td>
+                                       </tr>
+                                    </table>
+                                 </td>
+                              </tr>
+                           </table>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="about-row" style="padding: 10px 60px 20px 60px;">
+                           <table width="100%" style="border-spacing: 0;" role="presentation">
+                              <tr>
+                                 <td class="row-copy" style="padding-right: 25px; width: 50%;">
+                                    <table width="100%" style="border-spacing: 0;" role="presentation">
+                                       <tr>
+                                          <td class="about-title" class="sub-title">OUR GYM CENTER</td>
+                                       </tr>
+                                       <tr>
+                                          <td style="padding-top: 30px;" class="copy">Lorem ipsum odor amet,
+                                             consectetuer adipiscing elit. Lobortis
+                                             dis cubilia eleifend metus egestas
+                                             eget nam ornare porta.</td>
+                                       </tr>
+                                    </table>
+                                 </td>
+                                 <td class="row-image" style="padding-left: 25px; width: 50%;"><img src="workout 5.png"
+                                       alt="" title="" width="100%" /></td>
+                              </tr>
+                           </table>
+                        </td>
+                     </tr>
+                  </table>
+                  <table width="100%" style="border-spacing: 0; margin: 0;" role="presentation">
+                     <tr>
+                        <td><img src="bottom-horizontal-tear.png" alt="" title="" width="100%" /></td>
+                     </tr>
+                  </table>
+                  <table id="service-section" width="100%" style="border-spacing: 0;" role="presentation">
+                     <tr>
+                        <td class="sub-title" style="padding: 0 60px;">
+                           <p id="service-title">OUR SERVICE</p>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td id="services-data" style="padding: 0 40px 50px 40px;">
+                           <table id="services-list" style="border-spacing: 20px 0; border-collapse: separate;">
+                              <tr>
+                                 <td>
+                                    <table style="border-spacing: 0; border-collapse: separate;">
+                                       <tr>
+                                          <td class="service-image"><img src="workout 1.png" alt="" title=""
+                                                width="100%" /></td>
+                                       </tr>
+                                       <tr>
+                                          <td class="service-sub-title" style="text-align: center;">SERVICE 1</td>
+                                       </tr>
+                                       <tr>
+                                          <td class="copy" style="text-align: center;">Lorem ipsum odor amet,
+                                             consectetuer
+                                             adipiscing elit. Lobortis dis
+                                             cubilia
+                                             eleifend metus egestas
+                                             eget nam ornare porta.</td>
+                                    </table>
+                                 </td>
+                                 <td>
+                                    <table style="border-spacing: 0; border-collapse: separate;">
+                                       <tr>
+                                          <td class="service-image"><img src="workout 2.png" alt="" title=""
+                                                width="100%" /></td>
+                                       </tr>
+                                       <tr>
+                                          <td class="service-sub-title" style="text-align: center;">SERVICE 2</td>
+                                       </tr>
+                                       <tr>
+                                          <td class="copy" style="text-align: center;">Lorem ipsum odor amet,
+                                             consectetuer
+                                             adipiscing elit. Lobortis dis
+                                             cubilia
+                                             eleifend metus egestas
+                                             eget nam ornare porta.</td>
+
+                                       </tr>
+                                    </table>
+                                 </td>
+                                 <td>
+                                    <table style="border-spacing: 0; border-collapse: separate;">
+                                       <tr>
+
+                                          <td class="service-image"><img src="workout 3.png" alt="" title=""
+                                                width="100%" /></td>
+                                       </tr>
+                                       <tr>
+
+                                          <td class="service-sub-title" style="text-align: center;">SERVICE 3</td>
+                                       </tr>
+                                       <tr>
+                                          <td class="copy" style="text-align: center;">Lorem ipsum odor amet,
+                                             consectetuer
+                                             adipiscing elit. Lobortis dis
+                                             cubilia
+                                             eleifend metus egestas
+                                             eget nam ornare porta.</td>
+                                       </tr>
+                                    </table>
+                                 </td>
+                              </tr>
+                           </table>
+                        </td>
+                     </tr>
+                  </table>
+                  <table id="promo-section" width="100%" style="border-spacing: 0;" role="presentation">
+                     <tr>
+                        <td style="padding: 0px;">
+                           <table width="100%"
+                              style="border-spacing: 0; background-image: url(dead-lift.png); background-position: bottom; background-repeat: no-repeat; height: 261px;"
+                              role="presentation">
+                              <tr>
+                                 <td>
+                                    <table width="75%" style="border-spacing: 0; justify-self: center;"
+                                       role="presentation">
+                                       <tr>
+                                          <td class="title" style="padding-top: 20px; text-align: center;">FREE TRIAL
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <p id="promo-title">FOR NEW MEMBER</p>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="copy" style="text-align: center; padding-bottom: 42px;">Lorem ipsum
+                                             odor amet, consectetuer
+                                             adipiscing
+                                             elit. Lobortis dis cubilia
+                                             eleifend metus egestas
+                                             eget nam ornare porta.</td>
+                                       </tr>
+                                    </table>
+                                 </td>
+                              </tr>
+
+                           </table>
+                        </td>
+                     </tr>
+                  </table>
+                  <table id="footer-section" width="100%" style="border-spacing: 0; padding: 0 40px;"
+                     role="presentation">
+                     <tr>
+                        <td style="padding: 40px 40px 20px 40px;">
+                           <table width="100%" style="border-spacing: 0; text-align: center;" role="presentation">
+                              <tr>
+                                 <td style="height: 60px;"><a class="button" href="www.example.com">CONTACT
+                                       US&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;<img
+                                          style="vertical-align: middle; margin-top: -5px;" src="mouse-svgrepo-com.svg"
+                                          alt="" title="" /></a></td>
+                              </tr>
+                           </table>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td style="padding: 20px 60px 40px 60px;">
+                           <table id="link-footer" width="100%" style="border-spacing: 0; text-align: center;"
+                              role="presentation">
+                              <tr>
+                                 <td class="copy" align="center"><img
+                                       style="vertical-align: middle; margin-bottom: 0px;" src="web-svgrepo-com.svg"
+                                       alt="" title=""
+                                       width="20px" />&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;www.example.com</td>
+                                 <td class="copy"><img style="vertical-align: middle; margin-bottom: 0px;"
+                                       src="phone-circle-svgrepo-com.svg" alt="" title=""
+                                       width="20px" />&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;123-456-8990</td>
+                                 <td class="copy"><img style="vertical-align: middle; margin-bottom: 0px;"
+                                       src="location-svgrepo-com.svg" alt="" title=""
+                                       width="20px" />&zwnj;&nbsp;&#847;&zwnj;&nbsp;&#847;123 sw 456 st City, State
+                                    12345</td>
+                              </tr>
+                           </table>
+                        </td>
+                     </tr>
+                  </table>
+
+
+
+         </table>
+         </td>
+         </tr>
+         </table>
+
+         <!--[if mso]>
+            </td>
+            </tr>
+            </table>
+         <![endif]-->
+
+      </div>
+   </div>
+
+</body>
+
+</html>
