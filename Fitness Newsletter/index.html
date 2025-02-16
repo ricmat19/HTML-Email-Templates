@@ -200,11 +200,11 @@
 
       @media screen and (max-width: 599.98px) {
 
-         .title{
+         .title {
             font-size: 60px;
          }
 
-         .copy{
+         .copy {
             font-size: 12px;
          }
 
@@ -212,23 +212,48 @@
             padding-right: 10px !important;
          }
 
-         #services-data{
+         #services-data {
             padding-bottom: 0 !important;
          }
 
-         #services-list table{
+         #services-list table {
             padding-bottom: 40px;
          }
 
-         #services-list td, #link-footer td{
+         #services-list td,
+         #link-footer td,
+         .about-row td {
             display: block;
             width: 100% !important;
             text-align: center;
          }
 
-          #link-footer td{
+         #link-footer td {
             padding-bottom: 15px;
-          }
+         }
+
+         .about-row td{
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+         }
+
+         .about-title::after {
+            content: '';
+            height: 3px;
+            width: 25%;
+            position: absolute;
+            background-color: #ffde59;
+            left: calc(38%);
+            bottom: 0;
+         }
+
+         .about-first-image{
+            padding-bottom: 20px;
+         }
+
+         .about-second-image{
+            padding-top: 30px;
+         }
 
       }
 
@@ -365,7 +390,7 @@
                         <td class="about-row" style="padding: 20px 60px 10px 60px; margin: 0;">
                            <table width="100%" style="border-spacing: 0;" role="presentation">
                               <tr>
-                                 <td class="row-image" style="padding-right: 25px; width: 50%;"><img src="workout 4.png"
+                                 <td class="row-image about-first-image" style="padding-right: 25px; width: 50%;"><img src="workout 4.png"
                                        alt="" title="" width="100%" /></td>
                                  <td class="row-copy" style="padding-left: 25px; width: 50%;">
                                     <table width="100%" style="border-spacing: 0;" role="presentation">
@@ -401,7 +426,7 @@
                                        </tr>
                                     </table>
                                  </td>
-                                 <td class="row-image" style="padding-left: 25px; width: 50%;"><img src="workout 5.png"
+                                 <td class="row-image about-second-image" style="padding-left: 25px; width: 50%;"><img src="workout 5.png"
                                        alt="" title="" width="100%" /></td>
                               </tr>
                            </table>
