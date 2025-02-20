@@ -23,7 +23,6 @@
       table {
          border-spacing: 0;
          border-collapse: collapse;
-         background-color: black !important;
          color: white !important;
       }
 
@@ -165,7 +164,7 @@
          <![endif]-->
 
          <table align="center"
-            style="border-spacing: 0; border-collapse: collapse; color: #3d3d3d; font-family: Arial, Helvetica, sans-serif; font-size: 16px; background-color: #fafdfe; margin: 0 auto; padding: 0; width: 100%; max-width: 600px;"
+            style="border-spacing: 0; border-collapse: collapse; color: #3d3d3d; font-family: Arial, Helvetica, sans-serif; font-size: 16px; background-color: black; margin: 0 auto; padding: 0; width: 100%; max-width: 600px;"
             role="presentation">
             <tr>
                <td>
@@ -177,25 +176,44 @@
                </td>
             </tr>
             <tr>
-               <td><!-- offset banner food columns --->
+               <td style="position: relative;">
                   <table width="100%" style="border-spacing: 0;" role="presentation">
                      <tr>
-                        <td><img src="pancakes.jpg" alt="" title="" width="100%" /></td>
-                        <td><img src="pizza.jpg" alt="" title="" width="100%" /></td>
-                        <td><img src="cheese burger.jpg" alt="" title="" width="100%" /></td>
+                        <td style="padding: 0 25px"><!-- offset banner food columns --->
+                           <table width="100%" style="border-spacing: 0;" role="presentation">
+                              <tr>
+                                 <td style="position: absolute; top: -85px">
+                                    <table width="100%" style="border-spacing: 0;" role="presentation">
+                                       <tr>
+                                          <td style="padding: 0 25px;"><img
+                                                style="border: solid white 2px; border-radius: 20px;" src="pancakes.jpg"
+                                                alt="" title="" width="100%" />
+                                          </td>
+                                          <td><img style="border: solid white 2px; border-radius: 20px;" src="pizza.jpg"
+                                                alt="" title="" width="100%" /></td>
+                                          <td style="padding: 0 25px"><img
+                                                style="border: solid white 2px; border-radius: 20px;"
+                                                src="cheese burger.jpg" alt="" title="" width="100%" /></td>
+                                       </tr>
+                                    </table>
+                                 </td>
+                              </tr>
+                           </table>
+                        </td>
                      </tr>
                   </table>
                </td>
             </tr>
             <tr>
-               <td><!-- header --->
+               <td style="padding: 120px 50px 25px 50px;"><!-- header --->
                   <table width="100%" style="border-spacing: 0;" role="presentation">
                      <tr>
                         <td>
                            <table width="100%" style="border-spacing: 0;" role="presentation">
                               <tr>
-                                 <td><img src="food-dinner-svgrepo-com.svg" alt="" title="" width="75%" /></td>
-                                 <td><img src="kitchen-cooker-utensils-svgrepo-com.svg" alt="" title="" width="25%" />
+                                 <td><img src="kitchen-cooker-utensils-svgrepo-com.svg" alt="" title="" width="75%" />
+                                 </td>
+                                 <td><img src="food-dinner-svgrepo-com.svg" alt="" title="" width="25%" />
                                  </td>
                               </tr>
                            </table>
@@ -225,7 +243,13 @@
                </td>
             </tr>
             <tr>
-               <td><!-- two column copy --->
+               <td style="padding: 0 50px">
+                  <hr
+                     style="border: none; height: 3px; background: white; background: repeating-linear-gradient(90deg,white,white 40px,transparent 40px,transparent 50px);">
+               </td>
+            </tr>
+            <tr>
+               <td style="padding: 25px 50px;"><!-- two column copy --->
                   <table width="100%" style="border-spacing: 0;" role="presentation">
                      <tr>
                         <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer odio mauris, finibus
@@ -240,14 +264,14 @@
                </td>
             </tr>
             <tr>
-               <td><!-- healthy ingredients --->
+               <td style="padding: 0 50px;"><!-- healthy ingredients --->
                   <table width="100%" style="border-spacing: 0;" role="presentation">
                      <tr>
                         <td><img src="chicken wings.jpg" alt="" title="" width="100%" /></td>
                         <td>
                            <table width="100%" style="border-spacing: 0;" role="presentation">
                               <tr>
-                                 <td>Healthy<br />Ingedient</td>
+                                 <td>Healthy<br/>Ingedient</td>
                               </tr>
                               <tr>
                                  <td>Transformations</td>
@@ -272,20 +296,48 @@
                </td>
             </tr>
             <tr>
-               <td> <!-- seasonal ingredients --->
+               <td style="padding: 0 50px;"> <!-- seasonal ingredients --->
                   <table width="100%" style="border-spacing: 0;" role="presentation">
                      <tr>
-                        <td>Seasonal Ingedients</td>
+                        <td>
+                           <table width="100%" style="border-spacing: 0;" role="presentation">
+                              <tr>
+                                 <td>Seasonal Ingedients</td>
+                              </tr>
+                              <tr>
+                                 <td>Challenges</td>
+                              </tr>
+                              <tr>
+                                 <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam condimentum ornare
+                                    libero id consequat. Sed purus dolor,
+                                    mollis quis urna a, gravida finibus mauris. Nulla ex tortor, pharetra in nulla a,
+                                    iaculis consequat sem. Sed scelerisque
+                                    condimentum libero, id aliquet velit mollis sit.</td>
+                              </tr>
+                              <tr>
+                                 <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam semper justo a enim
+                                    vehicula lobortis. Aenean ullamcorper
+                                    quis libero in elementum. Morbi efficitur felis lorem, ut convallis massa venenatis
+                                    vitae. Vestibulum lacinia risus
+                                    quam, eget tristique dui lobortis sed. Curabitur sed risus ac ligula condimentum
+                                    convallis. Nullam.</td>
+                              </tr>
+
+                           </table>
+                        </td>
                         <td><img src="chicken wings.jpg" alt="" title="" width="100%" /></td>
                      </tr>
                   </table>
                </td>
             </tr>
             <tr>
-               <td> <!-- footer --->
-                  <table width="100%" style="border-spacing: 0;" role="presentation">
+               <td style="padding: 25px 0; background-color: white; color: black !important;"> <!-- footer --->
+                  <table width="100%"
+                     style="border-spacing: 0; background-color: white !important; color: black !important;"
+                     role="presentation">
                      <tr>
-                        <td></td>
+                        <td><img src="mail-svgrepo-com.svg" alt="" title="" width="20px" />email@example.com</td>
+                        <td>www.example.com<img src="globe-alt-1-svgrepo-com.svg" alt="" title="" width="20px" /></td>
                      </tr>
                   </table>
                </td>
